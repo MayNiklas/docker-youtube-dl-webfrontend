@@ -16,6 +16,7 @@
           </p>
         </form>
         <?php
+        exec("touch videos.txt");
         echo file_get_contents( "videos.txt" );
         ?>
       </main>
