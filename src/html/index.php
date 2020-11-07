@@ -9,7 +9,6 @@
         <h1>youtube-dl webfrontend</h1>
       </header>
       <main>
-        <a href='/'>Back home</a>
         <form action="yt-dl.php" method="get">
           <p>
             YouTube link<input type="text" name="link" />
