@@ -9,6 +9,7 @@
         <h1>youtube-dl webfrontend</h1>
       </header>
       <main>
+        <a href='/'>Back home</a>        
       	<?php
         $link = $_GET["link"];
       	$cmd = "youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 '$link' -o '%(title)s-%(uploader)s-%(width)sx%(height)s.%(ext)s' --restrict-filenames";
