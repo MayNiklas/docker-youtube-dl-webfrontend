@@ -11,9 +11,14 @@
       <main>
         <a href='/'>Back home</a>
         <form action="yt-dl.php" method="get">
-          <p>YouTube link<input type="text" name="link" /></p>
-          <button type="submit">Send</button>
+          <p>
+            YouTube link<input type="text" name="link" />
+            <button type="submit">Send</button>
+          </p>
         </form>
+        <?php
+        echo file_get_contents( "videos.txt" );
+        ?>
       </main>
       <footer>
         <p>For personal use only!</p>
