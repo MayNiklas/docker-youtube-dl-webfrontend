@@ -1,0 +1,9 @@
+---
+version: "2.1"
+services:
+  scene-extractor:
+    build: src
+    ports:
+      - "80:80"
+
+
