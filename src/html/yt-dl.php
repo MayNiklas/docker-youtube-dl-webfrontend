@@ -11,6 +11,12 @@
       <main>
         <p>
           <a href='/'>Back home</a>
+          <form action="yt-dl.php" method="get">
+            <p>
+              YouTube link<input type="text" name="link" />
+              <button type="submit">Send</button>
+            </p>
+          </form>           
         </p>
         <?php
         $link = $_GET["link"];
