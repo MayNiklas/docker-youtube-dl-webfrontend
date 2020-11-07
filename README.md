@@ -21,7 +21,7 @@ docker-compose example file:
 version: "3.0"
 services:
   youtube-dl:
-    build: src
+    image: mayniki/youtube-dl-webfrontend
     ports:
       - "80:80"
 ```
