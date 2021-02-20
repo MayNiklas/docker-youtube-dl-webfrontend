@@ -21,7 +21,6 @@
 	        exec("./dl.php " . $matches[0] . " > /dev/null &");
 	}
 	exec("touch videos.txt");
-	echo file_get_contents( "videos.txt" );
 	$new_videos_txt = "";
 	foreach(file("videos.txt") as $line){
 		preg_match("/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/", $line, $matches);
@@ -32,6 +31,7 @@
 			$new_videos_txt = $new_videos_txt . $line . '\n';
 		}
 	}
+	echo $new_video_txt;
 	file_put_contents("videos.txt", $new_videos_txt);
         ?>
       </main>
