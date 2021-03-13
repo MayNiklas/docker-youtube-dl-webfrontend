@@ -20,7 +20,7 @@
         </p>
         <?php
         $link = $_GET["link"];
-      	$cmd = "youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 '$link' -o '%(title)s-%(uploader)s-%(width)sx%(height)s.%(ext)s' --restrict-filenames";
+      	$cmd = "youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 '$link' -o '%(title)s-%(uploader)s-%(width)sx%(height)s.%(ext)s' --restrict-filenames --no-playlist";
       	exec("$cmd");
     
         $cmd="ls | grep *.mp4";
